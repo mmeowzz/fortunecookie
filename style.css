@@ -1,0 +1,77 @@
+body {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #fff0e6;
+  height: 100vh;
+  margin: 0;
+  color: #4b0082;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #9b30ff;
+  text-shadow: 1px 1px #fff;
+}
+
+.cookie-container {
+  position: relative;
+  width: 200px;
+  height: 150px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.cookie-half {
+  position: absolute;
+  width: 100px; /* adjust depending on your image */
+  height: auto;
+  top: 0;
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+#cookieLeft {
+  left: 0;
+  transform-origin: right center;
+}
+
+#cookieRight {
+  right: 0;
+  transform-origin: left center;
+}
+
+.cookie-broken #cookieLeft {
+  transform: rotate(-45deg) translateX(-40px);
+  opacity: 0.9;
+}
+
+.cookie-broken #cookieRight {
+  transform: rotate(45deg) translateX(40px);
+  opacity: 0.9;
+}
+
+#fortune {
+  font-size: 1.2rem;
+  text-align: center;
+  max-width: 300px;
+  min-height: 50px;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background: #9b30ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin: 5px;
+}
+
+button:hover {
+  background: #7d1fdc;
+}
